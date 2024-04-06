@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Extracter</title>
+</head>
+<style>
+    body{
+        background-color: rgba(165, 229, 229, 0.651);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+
+    }
+    h1{
+        text-align: center;
+
+    }
+    form{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    form p{
+        font-size: 18px;
+
+    } 
+    form textarea{
+        width: 70%;
+        height: 50vh;
+        font-size: 17px;
+        background-color: black;
+        color: #fff;
+        resize: none;
+    }
+    button{
+        margin: 8px;
+        padding: 10px;
+        font-size: 17px;
+        border-radius: 6px;
+        background-color: rgb(9, 131, 161);
+    }
+    button:hover{
+        color: gray;
+        background-color: aquamarine;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Please enter your text here to extract email..</h1>
+        <form action="/home" method="get">
+            <p class="pare">Please enter the text for doing sum fun:</p>
+            <textarea name="text" placeholder="Enter your text here..." ></textarea><br>
+            <button type="submit">Extract Now</button>
+        </form>
+    </div>
+</body>
+
+</html>
